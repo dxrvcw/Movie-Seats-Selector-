@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Seat Selector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="movie-picker-container">
+      <p class="movie-picker-text">Pick a movie:</p>
+      <select class="movie-picker-menu"></select>
+    </div>
+    <div class="legend">
+      <div class="legend-item-container">
+        <div class="seat n-a"></div>
+        <p class="legend__text">N/A</p>
+      </div>
+      <div class="legend-item-container">
+        <div class="seat selected"></div>
+        <p class="legend__text">Selected</p>
+      </div>
+      <div class="legend-item-container">
+        <div class="seat occupied"></div>
+        <p class="legend__text">Occupied</p>
+      </div>
+    </div>
+    <div class="movie">
+      <div class="screen"></div>
+      <div class="seats">
+        <div class="seats-row"></div>
+        <div class="seats-row"></div>
+        <div class="seats-row"></div>
+        <div class="seats-row"></div>
+        <div class="seats-row"></div>
+        <div class="seats-row"></div>
+      </div>
+    </div>
+    <p class="total-text">
+      You have selected <span class="seats_number">0</span> seats for a price of
+      $<span class="seats_price">0</span>
+    </p>
+    <div class="buy-button">
+      <p class="buy-button-text">Buy!</p>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
